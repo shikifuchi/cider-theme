@@ -87,6 +87,9 @@ div#app {
 .app-sidebar-item.active {
   background: @peach;
   color:@black;
+  > ._svg-icon {
+    filter: brightness(0);
+  }
 }
 
 .app-sidebar-item:active {
@@ -133,6 +136,9 @@ div#app {
 
           .app-sidebar-item {
             background-color: @bglayer1;
+            > ._svg-icon {
+              filter: brightness(0.5) sepia(1) hue-rotate(-70deg) saturate(5);
+            }
 
             &:hover {
               background-color: @blue;
@@ -166,4 +172,11 @@ div#app {
     }
   }
 }
+
+.playback-button:hover,
+.playback-button--small:hover {
+  background-color: @lavender;
+  opacity: 1;
+}
+
 
