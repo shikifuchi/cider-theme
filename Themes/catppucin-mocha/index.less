@@ -80,7 +80,6 @@ div#app {
 
 .app-sidebar-item:hover {
   background: @bglayer3;
-  // cursor: pointer;
 }
 
 .app-sidebar-item.active {
@@ -94,7 +93,6 @@ div#app {
 .app-sidebar-item:active {
   background: @peach;
   color: @black;
-  // transform: scale(0.98);
   transition: transform 0s;
   
 }
@@ -109,10 +107,6 @@ div#app {
 
 .song-album{
   color: @flamingo;
-}
-
-.playback-button--small {
-  color:@maroon;
 }
 
 .sidebar-item-text{
@@ -174,8 +168,16 @@ div#app {
 
 .playback-button:hover,
 .playback-button--small:hover {
+  background-color: @mauve;
+  opacity: 1;
+}
+
+.playback-button--small.active {
   background-color: @lavender;
   opacity: 1;
 }
 
-
+.playback-button--small.repeat.repeatOne {
+  background-color: @blue;
+  opacity: 1;
+}
